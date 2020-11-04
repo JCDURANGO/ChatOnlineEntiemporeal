@@ -1,0 +1,23 @@
+{
+  "name": "chatonlineentiemporeal",
+  "version": "1.0.0",
+  "description": "Chat utilizando Socket.io, Express, Node.js. Permite la comunicacion de varios usuarios a traves de mensajes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCDURANGO/ChatOnlineEntiemporeal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCDURANGO/ChatOnlineEntiemporeal/issues"
+  },
+  "homepage": "https://github.com/JCDURANGO/ChatOnlineEntiemporeal#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -4,3 +4,5 @@ Chat utilizando Socket.io, Express, Node.js. Permite la comunicacion de varios u
 Integrantes:
 
 - Jorge Carlos Durango Ramos 
+- Gerson David Ramirez Vargas
+

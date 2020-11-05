@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>ChatOnline</title>
+            <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+            <style>
+                body {
+                    margin: 0;
+                    font-family: sans-serif;
+                }
+
+                form {
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    box-sizing: border-box;
+                    padding: 0.25rem;
+                }
+
+                form input {
+                    border: 0;
+                    padding: 0.5rem;
+                    width: 100%;
+                    outline: 0;
+                    margin-right: 0.5rem;
+                    border-radius: 0.25rem;
+                    background: #93494E;
+                }
+
+                form button {
+                    width: 6rem;
+                    background-color: #53463f;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    border-radius: 0.25rem;
+                    text-transform: uppercase;
+                }
+
+                form button:hover {
+                    background-color: #372D2C;
+                }
+
+                .messages {
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 3rem;
+                }
+
+                .messages li {
+                    padding: 5px 10px;;
+                }
+
+                .messages li:nth-child(odd) {
+                    background: rgb(193, 196, 197);
+                }
+            </style>
+        </head>
+        <body>
+            <ul class="messages"></ul>
+            <form>
+                <input type="text" class="input" autocomplete="off" autofocus />
+                <button>Enviar</button>
+            </form>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="/socket.io/socket.io.js"></script>
+            <script>
+                const form = document.querySelector("form");
+                const input = document.querySelector(".input");
+                const messages = document.querySelector(".messages");
+                const username = prompt("Bienvenido a ChatOnline: Ingresa tu nombre de usuario: ", "");
+                const socket = io();
+            </script>
+        </body>
+    </html>

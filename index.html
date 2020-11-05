@@ -73,6 +73,41 @@
                 const messages = document.querySelector(".messages");
                 const username = prompt("Bienvenido a ChatOnline: Ingresa tu nombre de usuario: ", "");
                 const socket = io();
+                
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault();
+
+                    addMessage(username + ": " + input.value);
+
+                    socket.emit("chat_message", {
+                        message: input.value
+                    });
+
+                    input.value = "";
+                    return false;
+                }, false);
+
+                socket.on("chat_message", function(data) {
+                    addMessage(data.username + ": " + data.message);
+                });
+
+                socket.on("user_join", function(data) {
+                    addMessage(data + " Se ha unido al ChatOnline!");
+                });
+
+                socket.on("user_leave", function(data) {
+                    addMessage(data + " Abandono el ChatOnline.");
+                });
+
+                addMessage("Bienevenido ChatOnline:Te has unido como '" + username  + "'.");
+                socket.emit("user_join", username);
+
+                function addMessage(message) {
+                    const li = document.createElement("li");
+                    li.innerHTML = message;
+                    messages.appendChild(li);
+                    window.scrollTo(0, document.body.scrollHeight);
+                }
             </script>
         </body>
     </html>

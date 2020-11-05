@@ -5,4 +5,6 @@ Integrantes:
 
 - Jorge Carlos Durango Ramos 
 - Gerson David Ramirez Vargas
+- Yeison Luis Suarez Rico 
+- Jhorman Smith Rubio Gomez 
 

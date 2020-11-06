@@ -6,11 +6,11 @@ const app = require("express")();
     });
     
     io.on("connection", function(socket) {
-        console.log('Nuevo cliente se ha conectado');
-        
+     
         socket.on("user_join", function(data) {
             this.username = data;
             socket.broadcast.emit("user_join", data);
+            console.log( 'El usuario: ' + data +  ' se ha conectado ');
         });
 
         socket.on("chat_message", function(data) {

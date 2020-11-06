@@ -7,4 +7,5 @@ Integrantes:
 - Gerson David Ramirez Vargas
 - Yeison Luis Suarez Rico 
 - Jhorman Smith Rubio Gomez 
+- Juan José Julio Montiel
 

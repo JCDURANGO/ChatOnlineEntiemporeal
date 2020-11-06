@@ -97,6 +97,7 @@
 
                 socket.on("user_leave", function(data) {
                     addMessage(data + " Abandono el ChatOnline.");
+                    console.log( 'El usuario: ' + data+  ' se ha desconectado ');
                 });
 
                 addMessage("Bienevenido ChatOnline:Te has unido como '" + username  + "'.");

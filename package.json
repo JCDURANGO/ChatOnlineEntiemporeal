@@ -4,7 +4,8 @@
   "description": "Chat utilizando Socket.io, Express, Node.js. Permite la comunicacion de varios usuarios a traves de mensajes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "star_dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",

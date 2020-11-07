@@ -26,22 +26,18 @@
                     outline: 0;
                     margin-right: 0.5rem;
                     border-radius: 0.25rem;
-                    background: #93494E;
+                    background: #d8cb55;
                 }
 
                 form button {
-                    width: 6rem;
-                    background-color: #53463f;
-                    color: white;
-                    border: none;
-                    padding: 0.5rem;
-                    cursor: pointer;
-                    border-radius: 0.25rem;
-                    text-transform: uppercase;
+                    background: #999;
+                    border-radius: 0px 0px 20px 0px;
+                    width: 75px;
                 }
 
                 form button:hover {
-                    background-color: #372D2C;
+                    color: rgb(7, 4, 4);
+                    font-size: 20px;
                 }
 
                 .messages {
@@ -62,7 +58,7 @@
         <body>
             <ul class="messages"></ul>
             <form>
-                <input type="text" class="input" autocomplete="off" autofocus />
+                <input type="text" class="input" autocomplete="off" autofocus placeholder="Escribe tu mensaje....." />
                 <button>Enviar</button>
             </form>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
